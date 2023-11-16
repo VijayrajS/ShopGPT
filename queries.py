@@ -4,4 +4,6 @@ PRODUCT_COMPARISON_QUERY_SHORT = "I will give you the product information and re
 
 PRODUCT_COMPARISON_QUERY ="I will give you the product information and review summaries of a list of products. I want you to give me a comparison in natural language (do not list out the product information in a list). Shorten the text for each product.  \n Product Information: {}\n Reviews: {}"
 
+PRODUCT_COMPARISON_QUERY_FINAL ="I will give you the product information and review summaries of a list of products. I want you to give me a comparison in natural language (do not list out the product information in a list). Shorten the text for each product."
+
 RECOMMEND_QUERY = "You are a product recommender, the user will provide a description of what kind of a product they are looking for. you will also be given a json file of product information as text input. The json will have the product asin as key, and the values will have the following information [\'Item Weight\', \'Product Dimensions\', \'Item model number\', \'Batteries\', \'Customer Reviews\', \'Is Discontinued By Manufacturer\', \'Date First Available\', \'Color Name\', \'Signal Format\', \'Size\', \'Voltage\', \'reviews\']. You should recommend giving high weightage to the reviews, and also to the product information. You have to output the asin (key) of the product. You only recommend a single product."
