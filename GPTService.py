@@ -24,9 +24,10 @@ class GPTService:
         self.product_context = self.product_context.union(set([p for p in products if p != "_related_"]))
         print(self.product_context)
         query_type = query_type_json["type"]
-
+        print(query_type)
         if query_type == "summary":
-            products.remove("_related_")
+            if "_related_" in products:
+                products.remove("_related_")
             
             if query_type_json["isRecent"]:
                 return self.dbInstance.latest_summaries(products[0])
@@ -64,7 +65,7 @@ class GPTService:
                     x['reviews'] = ' '.join([str(x) for x in list(product_summary_list[u].values())])
                     data_recommendation[u] = x
             
-            response = GPTGateway.query(queries.PRODUCT_COMPARISON_QUERY_FINAL.format(json.dumps(data_recommendation)))
+            response = GPTGateway.query(queries.PRODUCT_COMPARISON_QUERY_FINAL.format(json.dumps(data_recommendation)), t = 0.8)
             self.context.append({"role": "agent", "content": response})
             return response
 
@@ -87,7 +88,8 @@ class GPTService:
                     x['reviews'] = ' '.join([str(x) for x in list(product_summary_list[u].values())])
                     data_recommendation[u] = x
             
-            response = GPTGateway.query(queries.RECOMMEND_QUERY.format(json.dumps(data_recommendation)))
+            response = GPTGateway.query(queries.RECOMMEND_QUERY.format(json.dumps(data_recommendation)), t = 0.5)
+            print('reco response: ', response)
             self.context.append({"role": "agent", "content": response})
             return response
             
