@@ -8,7 +8,7 @@ class GPTService:
     def __init__(self) -> None:
         self.dbInstance = MockoDB()
         self.context = []
-        self.product_context = {}
+        self.product_context = set()
         #! WE NEED TO HAVE A CACHE FOR PRODUCT SUMMARIES
 
     def getQueryType(self, query):
@@ -35,16 +35,17 @@ class GPTService:
                     if key == "Net Rating":
                         rating = summary[key]
                         stars = int(rating)*'★' + ((rating - int(rating)) >= 0.5)*"½"
-
-                        response += '<b>' + key + '</b>' + ': ' + str(rating) + ' ' + stars + '<br/>'
+ 
+                        response += '''<p style='font-size: 20px;'><b>''' + key + '</b>' + ': ' + str(rating) + ' ' + stars + '</p><br/>'
                     else:
-                        response += '<b>' + key + '</b>' + ':<br/>' + str(summary[key]) + '<br/>'
+                        response += '''<p style='font-size: 20px;'><b>''' + key + '</b>' + ':<br/>' + str(summary[key]) + '</p><br/>'
                 return response
 
         elif query_type == "comparision":
             if "_related_" in products:
                 products.remove("_related_")
-
+                products = list(set(products + list(self.product_context)))
+            
             product_info_list = []
             product_summary_list = []
 
@@ -52,8 +53,9 @@ class GPTService:
                 product_summary_list.append(self.dbInstance.get_summary(product))
                 product_info_list.append(self.dbInstance.get_product_info(product))
 
-            GPTGateway.query(queries)
+            GPTGateway.query(queries.PRODUCT_COMPARISON_QUERY_SHORT.format(str(product_info_list), str(product_summary_list)))
+
         elif query_type == "suggestion":
             pass
         else:
-            return
+            return GPTGateway.query(query)
