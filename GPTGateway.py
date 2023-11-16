@@ -1,6 +1,6 @@
 import openai
 
-api_key_1 = "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"
+api_key_1 = "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"
 
 class GPTGateway:
     @staticmethod
