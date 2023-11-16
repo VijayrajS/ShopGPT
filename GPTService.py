@@ -85,14 +85,18 @@ class GPTService:
             
             if products == []:
                 products = list(self.product_context)
+                
+            print('Products: ', products)
+            
             
             product_info_list = {}
             product_summary_list = {}
 
-            for product in product_summary_list.keys():
+            for product in products:
                 product_summary_list[product] = self.dbInstance.get_summary(product)
                 product_info_list[product] = self.dbInstance.get_product_info(product)
-
+            print(product_info_list)
+            print(product_summary_list)
             data_recommendation = {}
             for u in product_info_list.keys():
                 x = product_info_list[u]
