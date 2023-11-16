@@ -27,7 +27,7 @@ class GPTService:
 
         if query_type == "summary":
             if query_type_json["isRecent"]:
-                self.dbInstance.last_6_month_summary(products[0])
+                return self.dbInstance.latest_summaries(products[0])
             else:
                 response = "About " + products[0] + '\n'
                 summary = self.dbInstance.get_summary(products[0])
