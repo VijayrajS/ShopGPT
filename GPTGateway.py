@@ -8,8 +8,8 @@ class GPTGateway:
         openai.api_key = api_key_1
         
         prompt = [{"role": "user", "content": user_prompt}]
-        if message_mode = 
-        response = openai.ChatCompletion.create(
+        if message_mode:
+            response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=prompt,
             temperature = t
