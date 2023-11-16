@@ -20,9 +20,9 @@ class GPTService:
     def serve_query(self, query):
         self.context.append({"role": "user", "content": query})
         query_type_json = self.getQueryType(query)
-        print(query_type_json)
         products = query_type_json["products"]
-        self.product_context.add([p for p in products if p != "_related_"])
+        self.product_context = self.product_context.union(set([p for p in products if p != "_related_"]))
+        print(self.product_context)
         query_type = query_type_json["type"]
 
         if query_type == "summary":
@@ -39,23 +39,55 @@ class GPTService:
                         response += '''<p style='font-size: 20px;'><b>''' + key + '</b>' + ': ' + str(rating) + ' ' + stars + '</p><br/>'
                     else:
                         response += '''<p style='font-size: 20px;'><b>''' + key + '</b>' + ':<br/>' + str(summary[key]) + '</p><br/>'
+                
+                self.context.append({"role": "agent", "content": summary})
                 return response
 
-        elif query_type == "comparision":
+        elif query_type == "comparison":
             if "_related_" in products:
                 products.remove("_related_")
                 products = list(set(products + list(self.product_context)))
             
-            product_info_list = []
-            product_summary_list = []
+            product_info_list = {}
+            product_summary_list = {}
 
             for product in products:
-                product_summary_list.append(self.dbInstance.get_summary(product))
-                product_info_list.append(self.dbInstance.get_product_info(product))
+                product_summary_list[product] = self.dbInstance.get_summary(product)
+                product_info_list[product] = self.dbInstance.get_product_info(product)
 
-            GPTGateway.query(queries.PRODUCT_COMPARISON_QUERY_SHORT.format(str(product_info_list), str(product_summary_list)))
+            data_recommendation = {}
+            for u in product_info_list:
+                x = product_info_list[u]
+                if u in reviews:
+                    x['reviews'] = ' '.join([str(x) for x in list(product_summary_list[u].values())])
+                    data_recommendation[u] = x
+            
+            response = GPTGateway.query(queries.PRODUCT_COMPARISON_QUERY_FINAL.format(json.dumps(data_recommendation)))
+            self.context.append({"role": "agent", "content": response})
+            return response
 
         elif query_type == "suggestion":
-            pass
+            if "_related_" in products:
+                products.remove("_related_")
+                products = list(set(products + list(self.product_context)))
+            
+            product_info_list = {}
+            product_summary_list = {}
+
+            for product in products:
+                product_summary_list[product] = self.dbInstance.get_summary(product)
+                product_info_list[product] = self.dbInstance.get_product_info(product)
+
+            data_recommendation = {}
+            for u in product_info_list:
+                x = product_info_list[u]
+                if u in reviews:
+                    x['reviews'] = ' '.join([str(x) for x in list(product_summary_list[u].values())])
+                    data_recommendation[u] = x
+            
+            response = GPTGateway.query(queries.RECOMMEND_QUERY.format(json.dumps(data_recommendation)))
+            self.context.append({"role": "agent", "content": response})
+            return response
+            
         else:
-            return GPTGateway.query(query)
+            return GPTGateway.query(query, context = self.context, mode = "context")
