@@ -1,6 +1,6 @@
 import openai
 
-api_key_1 = "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"
+api_key_1 = "<SECRET_KEY>"
 
 class GPTGateway:
     @staticmethod
