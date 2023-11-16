@@ -26,6 +26,8 @@ class GPTService:
         query_type = query_type_json["type"]
 
         if query_type == "summary":
+            products.remove("_related_")
+            
             if query_type_json["isRecent"]:
                 return self.dbInstance.latest_summaries(products[0])
             else:
@@ -58,7 +60,7 @@ class GPTService:
             data_recommendation = {}
             for u in product_info_list:
                 x = product_info_list[u]
-                if u in reviews:
+                if u in product_summary_list.keys():
                     x['reviews'] = ' '.join([str(x) for x in list(product_summary_list[u].values())])
                     data_recommendation[u] = x
             
@@ -74,7 +76,7 @@ class GPTService:
             product_info_list = {}
             product_summary_list = {}
 
-            for product in products:
+            for product in product_summary_list.keys():
                 product_summary_list[product] = self.dbInstance.get_summary(product)
                 product_info_list[product] = self.dbInstance.get_product_info(product)
 
