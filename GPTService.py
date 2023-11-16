@@ -51,20 +51,29 @@ class GPTService:
                 products.remove("_related_")
                 products = list(set(products + list(self.product_context)))
             
+            if products == []:
+                products = list(self.product_context)
+            
             product_info_list = {}
             product_summary_list = {}
+            print('Products: ', products)
 
             for product in products:
                 product_summary_list[product] = self.dbInstance.get_summary(product)
                 product_info_list[product] = self.dbInstance.get_product_info(product)
+            print(product_info_list)
+            print(product_summary_list)
 
             data_recommendation = {}
-            for u in product_info_list:
+            for u in product_info_list.keys():
                 x = product_info_list[u]
-                if u in product_summary_list.keys():
-                    x['reviews'] = ' '.join([str(x) for x in list(product_summary_list[u].values())])
-                    data_recommendation[u] = x
+                x['reviews'] = ' '.join([str(_) for _ in list(product_summary_list[u].values())])
+                data_recommendation[u] = x
             
+            print('**')
+            print('data rec:', data_recommendation)
+            print('**')
+
             response = GPTGateway.query(queries.PRODUCT_COMPARISON_QUERY_FINAL.format(json.dumps(data_recommendation)), t = 0.8)
             self.context.append({"role": "agent", "content": response})
             return response
@@ -74,6 +83,9 @@ class GPTService:
                 products.remove("_related_")
                 products = list(set(products + list(self.product_context)))
             
+            if products == []:
+                products = list(self.product_context)
+            
             product_info_list = {}
             product_summary_list = {}
 
@@ -82,12 +94,15 @@ class GPTService:
                 product_info_list[product] = self.dbInstance.get_product_info(product)
 
             data_recommendation = {}
-            for u in product_info_list:
+            for u in product_info_list.keys():
                 x = product_info_list[u]
-                if u in reviews:
-                    x['reviews'] = ' '.join([str(x) for x in list(product_summary_list[u].values())])
-                    data_recommendation[u] = x
+                x['reviews'] = ' '.join([str(_) for _ in list(product_summary_list[u].values())])
+                data_recommendation[u] = x
             
+            print('**')
+            print('data rec:', data_recommendation)
+            print('**')
+
             response = GPTGateway.query(queries.RECOMMEND_QUERY.format(json.dumps(data_recommendation)), t = 0.5)
             print('reco response: ', response)
             self.context.append({"role": "agent", "content": response})
