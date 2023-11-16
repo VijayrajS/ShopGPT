@@ -1,0 +1,6 @@
+QUERY_TYPE_CLASSIFIER = 'When I send you a sentence, you need to give me a json with four keys: 1. type: The type of the sentence ("summary", "suggestion", "comparision" or "unknown" based on what the sentences ask for) (Note that a request for information about a particular product counts as a summary) , 2. products: A list of products involved in the query. If the query is generic and wants information about related products (not specific), just put one element with the string "_related_". 3. isRecent: If the user implies that he wants recent reviews, set isRecent to true. Else, set it to false. 4. stars: If the user wants a reviews assigned a specific number of stars, assign that to the stars field as an integer. If not, set it to 0. (Just give me the json, no filler text):  "{}"'
+
+PRODUCT_COMPARISON_QUERY = "I will give you the product information and review summaries of a list of products. I want you to give me a comparison in natural language (do not list out the product information in a list). Shorten the text for each product to 2 sentences each."
+
+"I will give you the product information and review summaries of a list of products. I want you to give me a comparison in natural language (do not list out the product information in a list). Shorten the text for each product."
+
