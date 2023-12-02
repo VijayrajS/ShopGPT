@@ -41,7 +41,7 @@ with gr.Blocks() as demo:
     def respond(message, chat_history):
         bot_message = shopgpt_chatbot(message)
 
-        chat_history.append(("<p style='font-size: 20px;'>"+message+"</p>", '''<div style="color: orange;">''' + bot_message + '''</div><img src="https://m.media-amazon.com/images/I/71uRENNFM4L._AC_SL1500_.jpg" alt="prod" width="100" height="100">'''))
+        chat_history.append(("<p style='font-size: 20px;'>"+message+"</p>", '''<div style="color: orange;">''' + bot_message))
         time.sleep(2)    
         return "", chat_history
 

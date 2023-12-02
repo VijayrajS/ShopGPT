@@ -13,6 +13,12 @@ class MockoDB:
         
         with open('tag_counts.json', 'r') as fp:
             self.tag_counts = json.load(fp)
+        
+        with open('inv_ind.json', 'r') as fp:
+            self.inv_ind = json.load(fp)
+        
+        with open('B00I11N2VO.json', 'r') as fp:
+            self.B00I11N2VO_reviews = json.load(fp)
 
     def get_summary(self, asin):
         return self.summary_data[asin]
@@ -22,3 +28,9 @@ class MockoDB:
 
     def get_tag_counts(self, asin):
         return self.tag_counts[asin]
+
+    def get_review_inv_ind(self, asin):
+        return self.inv_ind[asin]
+
+    def get_B00I11N2VO1_reviews(self):
+        return self.B00I11N2VO_reviews

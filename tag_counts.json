@@ -1,761 +1,762 @@
-{"B00I11N2VO":{
-    "sound quality": {
-        "positive": 5,
-        "total": 6,
-        "negative": 1
-    },
-    "ambient soundscapes": {
-        "positive": 1,
-        "total": 1
-    },
-    "price": {
-        "positive": 6,
-        "total": 7,
-        "negative": 1
-    },
-    "purchase": {
-        "positive": 2,
-        "total": 2
-    },
-    "reverb pedal": {
-        "positive": 1,
-        "total": 1
-    },
-    "signal to noise ratio": {
-        "positive": 1,
-        "total": 1
-    },
-    "reverb trails": {
-        "positive": 1,
-        "total": 1
-    },
-    "hardwire pedals": {
-        "positive": 1,
-        "total": 1
-    },
-    "solidly made": {
-        "positive": 1,
-        "total": 1
-    },
-    "innovative": {
-        "positive": 1,
-        "total": 1
-    },
-    "working-musician-friendly": {
-        "positive": 1,
-        "total": 1
-    },
-    "rubber guard": {
-        "positive": 1,
-        "total": 1
-    },
-    "protects settings": {
-        "positive": 1,
-        "total": 1
-    },
-    "rubber backing": {
-        "positive": 1,
-        "total": 1
-    },
-    "pre-cut": {
-        "positive": 1,
-        "total": 1
-    },
-    "switchable": {
-        "positive": 1,
-        "total": 1
-    },
-    "focus group research": {
-        "positive": 1,
-        "total": 1
-    },
-    "room for improvement": {
-        "negative": 1,
-        "total": 1
-    },
-    "Velcro not strong enough": {
-        "negative": 1,
-        "total": 1
-    },
-    "reverb features": {
-        "positive": 1,
-        "total": 1
-    },
-    "sound": {
-        "positive": 10,
-        "total": 11,
-        "neutral": 1
-    },
-    "budget-friendly": {
-        "positive": 1,
-        "total": 1
-    },
-    "excellent algorithms": {
-        "positive": 1,
-        "total": 1
-    },
-    "chorus effect": {
-        "positive": 1,
-        "total": 1
-    },
-    "sounds": {
-        "positive": 5,
-        "total": 6,
-        "negative": 1
-    },
-    "must buy": {
-        "positive": 1,
-        "total": 1
-    },
-    "subtle ambience": {
-        "positive": 1,
-        "total": 1
-    },
-    "swirling space noises": {
-        "positive": 1,
-        "total": 1
-    },
-    "control": {
-        "negative": 1,
-        "total": 1
-    },
-    "dry/wet ratio": {
-        "negative": 1,
-        "total": 1
-    },
-    "loop placement": {
-        "positive": 1,
-        "total": 1
-    },
-    "mix knob": {
-        "positive": 1,
-        "total": 1
-    },
-    "quality": {
-        "positive": 4,
-        "total": 4
-    },
-    "plate": {
-        "positive": 2,
-        "total": 2
-    },
-    "reverb": {
-        "negative": 1,
-        "total": 7,
-        "positive": 6
-    },
-    "stereo capability": {
-        "positive": 2,
-        "total": 2
-    },
-    "ambient capabilities": {
-        "positive": 1,
-        "total": 1
-    },
-    "replacement for holy grail": {
-        "positive": 1,
-        "total": 1
-    },
-    "pedal": {
-        "positive": 4,
-        "total": 5,
-        "negative": 1
-    },
-    "reverb options": {
-        "positive": 1,
-        "total": 1
-    },
-    "shimmer option": {
-        "positive": 1,
-        "total": 1
-    },
-    "reliability": {
-        "positive": 1,
-        "total": 1
-    },
-    "functionality": {
-        "positive": 1,
-        "total": 1
-    },
-    "versatility": {
-        "positive": 3,
-        "total": 3
-    },
-    "distinct voices": {
-        "positive": 1,
-        "total": 1
-    },
-    "drones": {
-        "positive": 1,
-        "total": 1
-    },
-    "ambient swells": {
-        "positive": 1,
-        "total": 1
-    },
-    "shimmer / halo / ghost / cavern voices": {
-        "positive": 1,
-        "total": 1
-    },
-    "traditional spring, plate and hall": {
-        "positive": 1,
-        "total": 1
-    },
-    "dreamscape modes": {
-        "positive": 1,
-        "total": 1
-    },
-    "volume swells": {
-        "positive": 1,
-        "total": 1
-    },
-    "tones": {
-        "positive": 1,
-        "total": 1
-    },
-    "pedal build quality": {
-        "positive": 1,
-        "total": 1
-    },
-    "ease of use": {
-        "positive": 2,
-        "total": 2
-    },
-    "design": {
-        "positive": 2,
-        "total": 2
-    },
-    "fun": {
-        "positive": 1,
-        "total": 1
-    },
-    "power supply": {
-        "negative": 2,
-        "total": 4,
-        "positive": 2
-    },
-    "delay pedals": {
-        "positive": 1,
-        "total": 1
-    },
-    "favorite": {
-        "positive": 1,
-        "total": 1
-    },
-    "used for almost a year": {
-        "positive": 1,
-        "total": 1
-    },
-    "switch out for other pedals": {
-        "negative": 1,
-        "total": 1
-    },
-    "definitely buy another": {
-        "positive": 1,
-        "total": 1
-    },
-    "room on my board": {
-        "neutral": 1,
-        "total": 1
-    },
-    "got a bigger one": {
-        "positive": 1,
-        "total": 1
-    },
-    "plate reverbs": {
-        "positive": 1,
-        "total": 1
-    },
-    "spring reverbs": {
-        "positive": 1,
-        "total": 1
-    },
-    "warm": {
-        "positive": 1,
-        "total": 1
-    },
-    "ample": {
-        "positive": 1,
-        "total": 1
-    },
-    "not killing guitar's tone": {
-        "positive": 1,
-        "total": 1
-    },
-    "PHERB": {
-        "positive": 1,
-        "total": 1
-    },
-    "SHIMMER": {
-        "positive": 1,
-        "total": 1
-    },
-    "low setting": {
-        "positive": 1,
-        "total": 1
-    },
-    "MIX dial at 9 or 10 o'clock": {
-        "positive": 1,
-        "total": 1
-    },
-    "LIVELINESS all the way up": {
-        "positive": 1,
-        "total": 1
-    },
-    "glitter": {
-        "positive": 1,
-        "total": 1
-    },
-    "jangle": {
-        "positive": 1,
-        "total": 1
-    },
-    "ambient or atmospheric FX-driven guitar work": {
-        "positive": 1,
-        "total": 1
-    },
-    "modest, light reverb": {
-        "positive": 1,
-        "total": 1
-    },
-    "rock": {
-        "positive": 1,
-        "total": 1
-    },
-    "blues": {
-        "positive": 1,
-        "total": 1
-    },
-    "metal": {
-        "positive": 1,
-        "total": 1
-    },
-    "punk": {
-        "positive": 1,
-        "total": 1
-    },
-    "9V adapter": {
-        "positive": 1,
-        "total": 1
-    },
-    "good ones": {
-        "positive": 1,
-        "total": 1
-    },
-    "daisy chain": {
-        "positive": 1,
-        "total": 1
-    },
-    "clean guitar sounds": {
-        "positive": 1,
-        "total": 1
-    },
-    "bright guitar sounds": {
-        "positive": 1,
-        "total": 1
-    },
-    "spacey sounds": {
-        "positive": 1,
-        "total": 1
-    },
-    "settings": {
-        "positive": 3,
-        "total": 3
-    },
-    "delivery": {
-        "positive": 2,
-        "total": 2
-    },
-    "description accuracy": {
-        "positive": 1,
-        "total": 1
-    },
-    "build quality": {
-        "positive": 3,
-        "total": 3
-    },
-    "customer support": {
-        "positive": 1,
-        "total": 1
-    },
-    "knobs": {
-        "positive": 1,
-        "total": 2,
-        "negative": 1
-    },
-    "sturdy": {
-        "positive": 2,
-        "total": 2
-    },
-    "performance": {
-        "positive": 1,
-        "total": 1
-    },
-    "guitar pedal": {
-        "positive": 1,
-        "total": 1
-    },
-    "spring reverb": {
-        "negative": 1,
-        "total": 3,
-        "positive": 2
-    },
-    "improvement": {
-        "positive": 1,
-        "total": 1
-    },
-    "Boss RV-5": {
-        "negative": 1,
-        "total": 1
-    },
-    "Lexicon reverbs": {
-        "positive": 1,
-        "total": 1
-    },
-    "nice": {
-        "positive": 1,
-        "total": 1
-    },
-    "condition": {
-        "negative": 1,
-        "total": 1
-    },
-    "packaging": {
-        "negative": 1,
-        "total": 1
-    },
-    "modes": {
-        "positive": 2,
-        "total": 2
-    },
-    "mix nob": {
-        "positive": 1,
-        "total": 1
-    },
-    "decay": {
-        "positive": 1,
-        "total": 1
-    },
-    "liveliness control": {
-        "positive": 1,
-        "total": 1
-    },
-    "diversity of controls": {
-        "positive": 1,
-        "total": 1
-    },
-    "fine tuning": {
-        "positive": 1,
-        "total": 1
-    },
-    "classic sounding reverb": {
-        "positive": 1,
-        "total": 1
-    },
-    "classic spring reverb": {
-        "positive": 1,
-        "total": 1
-    },
-    "ambient settings": {
-        "positive": 1,
-        "total": 1
-    },
-    "shine effect": {
-        "positive": 1,
-        "total": 1
-    },
-    "supernova effect": {
-        "positive": 1,
-        "total": 1
-    },
-    "shimmer effect": {
-        "negative": 1,
-        "total": 1
-    },
-    "pherb effect": {
-        "positive": 1,
-        "total": 1
-    },
-    "fantastic sounds": {
-        "positive": 1,
-        "total": 1
-    },
-    "diverse sounds": {
-        "positive": 1,
-        "total": 1
-    },
-    "recommendation": {
-        "positive": 1,
-        "total": 1
-    },
-    "reverbs": {
-        "positive": 1,
-        "total": 1
-    },
-    "playability": {
-        "negative": 1,
-        "total": 1
-    },
-    "modulation settings": {
-        "negative": 1,
-        "total": 1
-    },
-    "shimmer": {
-        "positive": 2,
-        "total": 3,
-        "negative": 1
-    },
-    "plate mod settings": {
-        "positive": 1,
-        "total": 1
-    },
-    "eerie shimmer with bass notes": {
-        "negative": 1,
-        "total": 1
-    },
-    "spring setting": {
-        "positive": 2,
-        "total": 2
-    },
-    "usability": {
-        "positive": 1,
-        "total": 1
-    },
-    "personal preference": {
-        "negative": 1,
-        "total": 1
-    },
-    "Supernova": {
-        "positive": 1,
-        "total": 1
-    },
-    "ambient sound": {
-        "positive": 1,
-        "total": 1
-    },
-    "space filling sound": {
-        "positive": 1,
-        "total": 1
-    },
-    "power consumption": {
-        "negative": 1,
-        "total": 1
-    },
-    "9V battery life": {
-        "negative": 1,
-        "total": 1
-    },
-    "size": {
-        "negative": 1,
-        "total": 1
-    },
-    "unit": {
-        "negative": 1,
-        "total": 1
-    },
-    "spacing": {
-        "negative": 1,
-        "total": 1
-    },
-    "tails on/off switch": {
-        "neutral": 1,
-        "total": 1
-    },
-    "combinations": {
-        "positive": 1,
-        "total": 1
-    },
-    "knob": {
-        "positive": 1,
-        "total": 1
-    },
-    "compatibility": {
-        "positive": 1,
-        "total": 1
-    },
-    "reverb pedals": {
-        "positive": 1,
-        "total": 1
-    },
-    "63 Fender Reverb pedal": {
-        "negative": 1,
-        "total": 1
-    },
-    "overall": {
-        "positive": 1,
-        "total": 1
-    },
-    "plate reverb setting": {
-        "positive": 1,
-        "total": 1
-    },
-    "modulated/shifted reverbs": {
-        "positive": 1,
-        "total": 1
-    },
-    "useability": {
-        "positive": 1,
-        "total": 1
-    },
-    "ambiance effects": {
-        "positive": 1,
-        "total": 1
-    },
-    "Supernatural reverb pedal": {
-        "positive": 1,
-        "total": 1
-    },
-    "Carbon Copy analog delay": {
-        "positive": 1,
-        "total": 1
-    },
-    "long ambient decays": {
-        "positive": 1,
-        "total": 1
-    },
-    "worship": {
-        "positive": 1,
-        "total": 1
-    },
-    "awesome": {
-        "positive": 1,
-        "total": 1
-    },
-    "cheesy": {
-        "negative": 2,
-        "total": 2
-    },
-    "amazing": {
-        "positive": 2,
-        "total": 2
-    },
-    "beautiful": {
-        "positive": 1,
-        "total": 1
-    },
-    "lush": {
-        "positive": 1,
-        "total": 1
-    },
-    "clear": {
-        "positive": 1,
-        "total": 1
-    },
-    "ambient": {
-        "positive": 1,
-        "total": 1
-    },
-    "incredible": {
-        "positive": 1,
-        "total": 1
-    },
-    "love": {
-        "positive": 1,
-        "total": 1
-    },
-    "music": {
-        "positive": 1,
-        "total": 1
-    },
-    "power button": {
-        "negative": 1,
-        "total": 1
-    },
-    "system": {
-        "negative": 1,
-        "total": 1
-    },
-    "ambient synth use": {
-        "positive": 2,
-        "total": 2
-    },
-    "tone": {
-        "positive": 2,
-        "total": 2
-    },
-    "plate reverb": {
-        "positive": 1,
-        "total": 1
-    },
-    "stereo ins & outs": {
-        "positive": 1,
-        "total": 1
-    },
-    "FX loops": {
-        "positive": 1,
-        "total": 1
-    },
-    "creative routing options": {
-        "positive": 1,
-        "total": 1
-    },
-    "unusual verb types": {
-        "positive": 1,
-        "total": 1
-    },
-    "ambient passages": {
-        "positive": 1,
-        "total": 1
-    },
-    "depth": {
-        "positive": 1,
-        "total": 1
-    },
-    "dry clean tones": {
-        "positive": 1,
-        "total": 1
-    },
-    "effect level": {
-        "negative": 1,
-        "total": 1
-    },
-    "artificial": {
-        "negative": 1,
-        "total": 1
-    },
-    "digital": {
-        "negative": 1,
-        "total": 1
-    },
-    "control over spring mode": {
-        "positive": 1,
-        "total": 1
-    },
-    "variety": {
-        "positive": 1,
-        "total": 1
-    },
-    "features": {
-        "positive": 1,
-        "total": 1
-    },
-    "options": {
-        "negative": 1,
-        "total": 1
-    },
-    "standard reverbs": {
-        "positive": 1,
-        "total": 1
-    },
-    "Reverb pedal": {
-        "positive": 1,
-        "total": 1
-    },
-    "plate sound": {
-        "positive": 1,
-        "total": 1
-    },
-    "ambient features": {
-        "positive": 1,
-        "total": 1
-    },
-    "tracking on shimmer": {
-        "neutral": 1,
-        "total": 1
-    },
-    "pedal size": {
-        "negative": 1,
-        "total": 1
+{
+    "B00I11N2VO": {
+        "sound quality": {
+            "positive": 5,
+            "total": 6,
+            "negative": 1
+        },
+        "ambient soundscapes": {
+            "positive": 1,
+            "total": 1
+        },
+        "price": {
+            "positive": 6,
+            "total": 7,
+            "negative": 1
+        },
+        "purchase": {
+            "positive": 2,
+            "total": 2
+        },
+        "reverb pedal": {
+            "positive": 1,
+            "total": 1
+        },
+        "signal to noise ratio": {
+            "positive": 1,
+            "total": 1
+        },
+        "reverb trails": {
+            "positive": 1,
+            "total": 1
+        },
+        "hardwire pedals": {
+            "positive": 1,
+            "total": 1
+        },
+        "solidly made": {
+            "positive": 1,
+            "total": 1
+        },
+        "innovative": {
+            "positive": 1,
+            "total": 1
+        },
+        "working-musician-friendly": {
+            "positive": 1,
+            "total": 1
+        },
+        "rubber guard": {
+            "positive": 1,
+            "total": 1
+        },
+        "protects settings": {
+            "positive": 1,
+            "total": 1
+        },
+        "rubber backing": {
+            "positive": 1,
+            "total": 1
+        },
+        "pre-cut": {
+            "positive": 1,
+            "total": 1
+        },
+        "switchable": {
+            "positive": 1,
+            "total": 1
+        },
+        "focus group research": {
+            "positive": 1,
+            "total": 1
+        },
+        "room for improvement": {
+            "negative": 1,
+            "total": 1
+        },
+        "Velcro not strong enough": {
+            "negative": 1,
+            "total": 1
+        },
+        "reverb features": {
+            "positive": 1,
+            "total": 1
+        },
+        "sound": {
+            "positive": 10,
+            "total": 11,
+            "neutral": 1
+        },
+        "budget-friendly": {
+            "positive": 1,
+            "total": 1
+        },
+        "excellent algorithms": {
+            "positive": 1,
+            "total": 1
+        },
+        "chorus effect": {
+            "positive": 1,
+            "total": 1
+        },
+        "sounds": {
+            "positive": 5,
+            "total": 6,
+            "negative": 1
+        },
+        "must buy": {
+            "positive": 1,
+            "total": 1
+        },
+        "subtle ambience": {
+            "positive": 1,
+            "total": 1
+        },
+        "swirling space noises": {
+            "positive": 1,
+            "total": 1
+        },
+        "control": {
+            "negative": 1,
+            "total": 1
+        },
+        "dry/wet ratio": {
+            "negative": 1,
+            "total": 1
+        },
+        "loop placement": {
+            "positive": 1,
+            "total": 1
+        },
+        "mix knob": {
+            "positive": 1,
+            "total": 1
+        },
+        "quality": {
+            "positive": 4,
+            "total": 4
+        },
+        "plate": {
+            "positive": 2,
+            "total": 2
+        },
+        "reverb": {
+            "negative": 1,
+            "total": 7,
+            "positive": 6
+        },
+        "stereo capability": {
+            "positive": 2,
+            "total": 2
+        },
+        "ambient capabilities": {
+            "positive": 1,
+            "total": 1
+        },
+        "replacement for holy grail": {
+            "positive": 1,
+            "total": 1
+        },
+        "pedal": {
+            "positive": 4,
+            "total": 5,
+            "negative": 1
+        },
+        "reverb options": {
+            "positive": 1,
+            "total": 1
+        },
+        "shimmer option": {
+            "positive": 1,
+            "total": 1
+        },
+        "reliability": {
+            "positive": 1,
+            "total": 1
+        },
+        "functionality": {
+            "positive": 1,
+            "total": 1
+        },
+        "versatility": {
+            "positive": 3,
+            "total": 3
+        },
+        "distinct voices": {
+            "positive": 1,
+            "total": 1
+        },
+        "drones": {
+            "positive": 1,
+            "total": 1
+        },
+        "ambient swells": {
+            "positive": 1,
+            "total": 1
+        },
+        "shimmer / halo / ghost / cavern voices": {
+            "positive": 1,
+            "total": 1
+        },
+        "traditional spring, plate and hall": {
+            "positive": 1,
+            "total": 1
+        },
+        "dreamscape modes": {
+            "positive": 1,
+            "total": 1
+        },
+        "volume swells": {
+            "positive": 1,
+            "total": 1
+        },
+        "tones": {
+            "positive": 1,
+            "total": 1
+        },
+        "pedal build quality": {
+            "positive": 1,
+            "total": 1
+        },
+        "ease of use": {
+            "positive": 2,
+            "total": 2
+        },
+        "design": {
+            "positive": 2,
+            "total": 2
+        },
+        "fun": {
+            "positive": 1,
+            "total": 1
+        },
+        "power supply": {
+            "negative": 2,
+            "total": 4,
+            "positive": 2
+        },
+        "delay pedals": {
+            "positive": 1,
+            "total": 1
+        },
+        "favorite": {
+            "positive": 1,
+            "total": 1
+        },
+        "used for almost a year": {
+            "positive": 1,
+            "total": 1
+        },
+        "switch out for other pedals": {
+            "negative": 1,
+            "total": 1
+        },
+        "definitely buy another": {
+            "positive": 1,
+            "total": 1
+        },
+        "room on my board": {
+            "neutral": 1,
+            "total": 1
+        },
+        "got a bigger one": {
+            "positive": 1,
+            "total": 1
+        },
+        "plate reverbs": {
+            "positive": 1,
+            "total": 1
+        },
+        "spring reverbs": {
+            "positive": 1,
+            "total": 1
+        },
+        "warm": {
+            "positive": 1,
+            "total": 1
+        },
+        "ample": {
+            "positive": 1,
+            "total": 1
+        },
+        "not killing guitar's tone": {
+            "positive": 1,
+            "total": 1
+        },
+        "PHERB": {
+            "positive": 1,
+            "total": 1
+        },
+        "SHIMMER": {
+            "positive": 1,
+            "total": 1
+        },
+        "low setting": {
+            "positive": 1,
+            "total": 1
+        },
+        "MIX dial at 9 or 10 o'clock": {
+            "positive": 1,
+            "total": 1
+        },
+        "LIVELINESS all the way up": {
+            "positive": 1,
+            "total": 1
+        },
+        "glitter": {
+            "positive": 1,
+            "total": 1
+        },
+        "jangle": {
+            "positive": 1,
+            "total": 1
+        },
+        "ambient or atmospheric FX-driven guitar work": {
+            "positive": 1,
+            "total": 1
+        },
+        "modest, light reverb": {
+            "positive": 1,
+            "total": 1
+        },
+        "rock": {
+            "positive": 1,
+            "total": 1
+        },
+        "blues": {
+            "positive": 1,
+            "total": 1
+        },
+        "metal": {
+            "positive": 1,
+            "total": 1
+        },
+        "punk": {
+            "positive": 1,
+            "total": 1
+        },
+        "9V adapter": {
+            "positive": 1,
+            "total": 1
+        },
+        "good ones": {
+            "positive": 1,
+            "total": 1
+        },
+        "daisy chain": {
+            "positive": 1,
+            "total": 1
+        },
+        "clean guitar sounds": {
+            "positive": 1,
+            "total": 1
+        },
+        "bright guitar sounds": {
+            "positive": 1,
+            "total": 1
+        },
+        "spacey sounds": {
+            "positive": 1,
+            "total": 1
+        },
+        "settings": {
+            "positive": 3,
+            "total": 3
+        },
+        "delivery": {
+            "positive": 2,
+            "total": 2
+        },
+        "description accuracy": {
+            "positive": 1,
+            "total": 1
+        },
+        "build quality": {
+            "positive": 3,
+            "total": 3
+        },
+        "customer support": {
+            "positive": 1,
+            "total": 1
+        },
+        "knobs": {
+            "positive": 1,
+            "total": 2,
+            "negative": 1
+        },
+        "sturdy": {
+            "positive": 2,
+            "total": 2
+        },
+        "performance": {
+            "positive": 1,
+            "total": 1
+        },
+        "guitar pedal": {
+            "positive": 1,
+            "total": 1
+        },
+        "spring reverb": {
+            "negative": 1,
+            "total": 3,
+            "positive": 2
+        },
+        "improvement": {
+            "positive": 1,
+            "total": 1
+        },
+        "Boss RV-5": {
+            "negative": 1,
+            "total": 1
+        },
+        "Lexicon reverbs": {
+            "positive": 1,
+            "total": 1
+        },
+        "nice": {
+            "positive": 1,
+            "total": 1
+        },
+        "condition": {
+            "negative": 1,
+            "total": 1
+        },
+        "packaging": {
+            "negative": 1,
+            "total": 1
+        },
+        "modes": {
+            "positive": 2,
+            "total": 2
+        },
+        "mix nob": {
+            "positive": 1,
+            "total": 1
+        },
+        "decay": {
+            "positive": 1,
+            "total": 1
+        },
+        "liveliness control": {
+            "positive": 1,
+            "total": 1
+        },
+        "diversity of controls": {
+            "positive": 1,
+            "total": 1
+        },
+        "fine tuning": {
+            "positive": 1,
+            "total": 1
+        },
+        "classic sounding reverb": {
+            "positive": 1,
+            "total": 1
+        },
+        "classic spring reverb": {
+            "positive": 1,
+            "total": 1
+        },
+        "ambient settings": {
+            "positive": 1,
+            "total": 1
+        },
+        "shine effect": {
+            "positive": 1,
+            "total": 1
+        },
+        "supernova effect": {
+            "positive": 1,
+            "total": 1
+        },
+        "shimmer effect": {
+            "negative": 1,
+            "total": 1
+        },
+        "pherb effect": {
+            "positive": 1,
+            "total": 1
+        },
+        "fantastic sounds": {
+            "positive": 1,
+            "total": 1
+        },
+        "diverse sounds": {
+            "positive": 1,
+            "total": 1
+        },
+        "recommendation": {
+            "positive": 1,
+            "total": 1
+        },
+        "reverbs": {
+            "positive": 1,
+            "total": 1
+        },
+        "playability": {
+            "negative": 1,
+            "total": 1
+        },
+        "modulation settings": {
+            "negative": 1,
+            "total": 1
+        },
+        "shimmer": {
+            "positive": 2,
+            "total": 3,
+            "negative": 1
+        },
+        "plate mod settings": {
+            "positive": 1,
+            "total": 1
+        },
+        "eerie shimmer with bass notes": {
+            "negative": 1,
+            "total": 1
+        },
+        "spring setting": {
+            "positive": 2,
+            "total": 2
+        },
+        "usability": {
+            "positive": 1,
+            "total": 1
+        },
+        "personal preference": {
+            "negative": 1,
+            "total": 1
+        },
+        "Supernova": {
+            "positive": 1,
+            "total": 1
+        },
+        "ambient sound": {
+            "positive": 1,
+            "total": 1
+        },
+        "space filling sound": {
+            "positive": 1,
+            "total": 1
+        },
+        "power consumption": {
+            "negative": 1,
+            "total": 1
+        },
+        "9V battery life": {
+            "negative": 1,
+            "total": 1
+        },
+        "size": {
+            "negative": 1,
+            "total": 1
+        },
+        "unit": {
+            "negative": 1,
+            "total": 1
+        },
+        "spacing": {
+            "negative": 1,
+            "total": 1
+        },
+        "tails on/off switch": {
+            "neutral": 1,
+            "total": 1
+        },
+        "combinations": {
+            "positive": 1,
+            "total": 1
+        },
+        "knob": {
+            "positive": 1,
+            "total": 1
+        },
+        "compatibility": {
+            "positive": 1,
+            "total": 1
+        },
+        "reverb pedals": {
+            "positive": 1,
+            "total": 1
+        },
+        "63 Fender Reverb pedal": {
+            "negative": 1,
+            "total": 1
+        },
+        "overall": {
+            "positive": 1,
+            "total": 1
+        },
+        "plate reverb setting": {
+            "positive": 1,
+            "total": 1
+        },
+        "modulated/shifted reverbs": {
+            "positive": 1,
+            "total": 1
+        },
+        "useability": {
+            "positive": 1,
+            "total": 1
+        },
+        "ambiance effects": {
+            "positive": 1,
+            "total": 1
+        },
+        "Supernatural reverb pedal": {
+            "positive": 1,
+            "total": 1
+        },
+        "Carbon Copy analog delay": {
+            "positive": 1,
+            "total": 1
+        },
+        "long ambient decays": {
+            "positive": 1,
+            "total": 1
+        },
+        "worship": {
+            "positive": 1,
+            "total": 1
+        },
+        "awesome": {
+            "positive": 1,
+            "total": 1
+        },
+        "cheesy": {
+            "negative": 2,
+            "total": 2
+        },
+        "amazing": {
+            "positive": 2,
+            "total": 2
+        },
+        "beautiful": {
+            "positive": 1,
+            "total": 1
+        },
+        "lush": {
+            "positive": 1,
+            "total": 1
+        },
+        "clear": {
+            "positive": 1,
+            "total": 1
+        },
+        "ambient": {
+            "positive": 1,
+            "total": 1
+        },
+        "incredible": {
+            "positive": 1,
+            "total": 1
+        },
+        "love": {
+            "positive": 1,
+            "total": 1
+        },
+        "music": {
+            "positive": 1,
+            "total": 1
+        },
+        "power button": {
+            "negative": 1,
+            "total": 1
+        },
+        "system": {
+            "negative": 1,
+            "total": 1
+        },
+        "ambient synth use": {
+            "positive": 2,
+            "total": 2
+        },
+        "tone": {
+            "positive": 2,
+            "total": 2
+        },
+        "plate reverb": {
+            "positive": 1,
+            "total": 1
+        },
+        "stereo ins & outs": {
+            "positive": 1,
+            "total": 1
+        },
+        "FX loops": {
+            "positive": 1,
+            "total": 1
+        },
+        "creative routing options": {
+            "positive": 1,
+            "total": 1
+        },
+        "unusual verb types": {
+            "positive": 1,
+            "total": 1
+        },
+        "ambient passages": {
+            "positive": 1,
+            "total": 1
+        },
+        "depth": {
+            "positive": 1,
+            "total": 1
+        },
+        "dry clean tones": {
+            "positive": 1,
+            "total": 1
+        },
+        "effect level": {
+            "negative": 1,
+            "total": 1
+        },
+        "artificial": {
+            "negative": 1,
+            "total": 1
+        },
+        "digital": {
+            "negative": 1,
+            "total": 1
+        },
+        "control over spring mode": {
+            "positive": 1,
+            "total": 1
+        },
+        "variety": {
+            "positive": 1,
+            "total": 1
+        },
+        "features": {
+            "positive": 1,
+            "total": 1
+        },
+        "options": {
+            "negative": 1,
+            "total": 1
+        },
+        "standard reverbs": {
+            "positive": 1,
+            "total": 1
+        },
+        "Reverb pedal": {
+            "positive": 1,
+            "total": 1
+        },
+        "plate sound": {
+            "positive": 1,
+            "total": 1
+        },
+        "ambient features": {
+            "positive": 1,
+            "total": 1
+        },
+        "tracking on shimmer": {
+            "neutral": 1,
+            "total": 1
+        },
+        "pedal size": {
+            "negative": 1,
+            "total": 1
+        }
     }
-}
 }

@@ -3,6 +3,7 @@ import queries
 import json
 from collections import defaultdict
 from DataSource import MockoDB
+import random
 
 class GPTService:
     def __init__(self) -> None:
@@ -19,11 +20,37 @@ class GPTService:
         return query_type_data
 
     def serve_query(self, query):
-        print("Here")
+        # print("Here")
+        query = query.strip()
         if self.summary_keyword_mode and query[0] == ":":
+            inv_ind = self.dbInstance.get_review_inv_ind(self.prev_summary_prod)
+            keyword = query[1:].strip()
             
-            return "It's working"
+            r_c = random.sample(inv_ind[keyword], 3)
+            reviews = self.dbInstance.get_B00I11N2VO1_reviews()
+
+            reviews = [reviews[i] for i in r_c]
+
+            keywords = self.dbInstance.get_tag_counts(self.prev_summary_prod)
+            isgreat = defaultdict(int, keywords[keyword])['negative'] < defaultdict(int, keywords[keyword])['positive']
+            equivocate = defaultdict(int, keywords[keyword])['negative'] in range(defaultdict(int, keywords[keyword])['positive'] - 1, defaultdict(int, keywords[keyword])['positive'] + 2) 
+
+            st = ""
+            
+            if equivocate:
+                st = "The product received mixed reviews regarding {}. ".format(keyword)
+            elif isgreat:
+                st = "The product usually received positive reviews regarding {}. ".format(keyword)
+            else:
+                st = "The product usually received negative reviews regarding {}. ".format(keyword)
+            
+            st += "A few reviews pertaining to {}: ".format(keyword)
+            
+            return st + " ".join(['''<div>"{}"</div>'''.format(rev["reviewText"]) for rev in reviews])
         
+        self.summary_keyword_mode = False
+        self.prev_summary_prod = ""
+
         self.context.append({"role": "user", "content": query})
         query_type_json = self.getQueryType(query)
         products = query_type_json["products"]
@@ -38,12 +65,14 @@ class GPTService:
                 return self.dbInstance.latest_summaries(products[0])
             else:
                 response = "About " + products[0] + '\n'
+                if products[0] == "B00I11N2VO":
+                    response += '''</div><img src="https://m.media-amazon.com/images/I/61mOvZtg7dL._AC_UF894,1000_QL80_.jpg" alt="prod" width="100" height="100">'''
                 summary = self.dbInstance.get_summary(products[0])
                 for key in summary.keys():
                     if key == "Net Rating":
                         rating = summary[key]
                         stars = int(rating)*'★' + ((rating - int(rating)) >= 0.5)*"½"
- 
+
                         response += '''<p style='font-size: 20px;'><b>''' + key + '</b>' + ': ' + str(rating) + ' ' + stars + '</p><br/>'
                     else:
                         response += '''<p style='font-size: 20px;'><b>''' + key + '</b>' + ':<br/>' + str(summary[key]) + '</p><br/>'
@@ -53,10 +82,9 @@ class GPTService:
                 self.prev_summary_prod = products[0]
                 
                 keywords = self.dbInstance.get_tag_counts(products[0])
-                print(keywords)
                 top_keywords = sorted(keywords.keys(), key = lambda x: -keywords[x]["total"])[:min(len(keywords), 10)]
                 def color_txt(txt, color):
-                    return '''<div style="color: {};">'''.format(color) + txt + '''</div>'''
+                    return '''<div style="color: {};display=inline;">'''.format(color) + txt + '''</div>'''
                 
                 response += '\n'
                 
@@ -65,7 +93,7 @@ class GPTService:
                                 else color_txt(keyw, 'red') \
                                 for keyw in top_keywords]
                 
-                response += ', '.join(top_keywords)
+                response += 'Keywords: ' + ' '.join(top_keywords)
                 return response
 
         elif query_type == "comparison":
