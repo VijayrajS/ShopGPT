@@ -1,7 +1,7 @@
 from GPTGateway import GPTGateway
 import queries
 import json
-from collections import deque
+from collections import defaultdict
 from DataSource import MockoDB
 
 class GPTService:
@@ -9,7 +9,8 @@ class GPTService:
         self.dbInstance = MockoDB()
         self.context = []
         self.product_context = set()
-        #! WE NEED TO HAVE A CACHE FOR PRODUCT SUMMARIES
+        self.summary_keyword_mode = False
+        self.prev_summary_prod = ""
 
     def getQueryType(self, query):
         query_type_json = GPTGateway.query(queries.QUERY_TYPE_CLASSIFIER.format(query), mode = "internal")
@@ -18,13 +19,17 @@ class GPTService:
         return query_type_data
 
     def serve_query(self, query):
+        print("Here")
+        if self.summary_keyword_mode and query[0] == ":":
+            
+            return "It's working"
+        
         self.context.append({"role": "user", "content": query})
         query_type_json = self.getQueryType(query)
         products = query_type_json["products"]
         self.product_context = self.product_context.union(set([p for p in products if p != "_related_"]))
-        print(self.product_context)
         query_type = query_type_json["type"]
-        print(query_type)
+
         if query_type == "summary":
             if "_related_" in products:
                 products.remove("_related_")
@@ -44,6 +49,23 @@ class GPTService:
                         response += '''<p style='font-size: 20px;'><b>''' + key + '</b>' + ':<br/>' + str(summary[key]) + '</p><br/>'
                 
                 self.context.append({"role": "agent", "content": summary})
+                self.summary_keyword_mode = True
+                self.prev_summary_prod = products[0]
+                
+                keywords = self.dbInstance.get_tag_counts(products[0])
+                print(keywords)
+                top_keywords = sorted(keywords.keys(), key = lambda x: -keywords[x]["total"])[:min(len(keywords), 10)]
+                def color_txt(txt, color):
+                    return '''<div style="color: {};">'''.format(color) + txt + '''</div>'''
+                
+                response += '\n'
+                
+                top_keywords = [color_txt(keyw, 'green')
+                                if defaultdict(int, keywords[keyw])['negative'] < defaultdict(int, keywords[keyw])['positive'] \
+                                else color_txt(keyw, 'red') \
+                                for keyw in top_keywords]
+                
+                response += ', '.join(top_keywords)
                 return response
 
         elif query_type == "comparison":
