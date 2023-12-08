@@ -1,9 +1,15 @@
 import json
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
+
 
 class MockoDB:
     def __init__(self) -> None:
         self.product_info = {}
         self.summary_data = {}
+        PYMONGO_URI = "mongodb+srv://shopgpt-beauty:3bbBVIYAcgnnqaln@beauty-review-cluster.em3e1lu.mongodb.net/?retryWrites=true&w=majority"
+        self.client = MongoClient(uri)
+        self.db = client['shopgpt-beauty']
 
         with open('review_summaries.json', 'r') as f:
             self.summary_data = json.load(f)
@@ -21,16 +27,21 @@ class MockoDB:
             self.B00I11N2VO_reviews = json.load(fp)
 
     def get_summary(self, asin):
-        return self.summary_data[asin]
+        collection = db['general_summaries']
+        summaries = collection.find({})
+        return summaries
 
     def get_product_info(self, asin):
-        return self.product_info[asin]
+        summaries = collection.find({"asin":asin})
+        return summaries
 
     def get_tag_counts(self, asin):
-        return self.tag_counts[asin]
+        summaries = collection.find({"asin":asin})
+        return summaries
 
     def get_review_inv_ind(self, asin):
         return self.inv_ind[asin]
 
     def get_B00I11N2VO1_reviews(self):
-        return self.B00I11N2VO_reviews
+        self.summaries = collection.find({"asin":"B00I11N2VO1"})
+        return self.summaries
