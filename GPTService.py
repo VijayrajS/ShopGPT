@@ -4,6 +4,7 @@ import json
 from collections import defaultdict
 from DataSource import MockoDB
 import random
+from amazon_scrape import scrape_imgs
 
 class GPTService:
     def __init__(self) -> None:
@@ -20,7 +21,6 @@ class GPTService:
         return query_type_data
 
     def serve_query(self, query):
-        # print("Here")
         query = query.strip()
         if self.summary_keyword_mode and query[0] == ":":
             inv_ind = self.dbInstance.get_review_inv_ind(self.prev_summary_prod)
@@ -65,17 +65,17 @@ class GPTService:
                 return self.dbInstance.latest_summaries(products[0])
             else:
                 response = "About " + products[0] + '\n'
-                if products[0] == "B00I11N2VO":
-                    response += '''</div><img src="https://m.media-amazon.com/images/I/61mOvZtg7dL._AC_UF894,1000_QL80_.jpg" alt="prod" width="100" height="100">'''
+                Url = "https://www.amazon.com/dp/" + products[0]
+                scrape_imgs(Url)  
                 summary = self.dbInstance.get_summary(products[0])
                 for key in summary.keys():
                     if key == "Net Rating":
                         rating = summary[key]
                         stars = int(rating)*'★' + ((rating - int(rating)) >= 0.5)*"½"
 
-                        response += '''<p style='font-size: 20px;'><b>''' + key + '</b>' + ': ' + str(rating) + ' ' + stars + '</p><br/>'
+                        response += '''<img src=''' + Url + '''alt="prod" width="100" height="100"><p style='font-size: 20px;'></div><b>''' + key + '</b>' + ': ' + str(rating) + ' ' + stars + '</p><br/>'
                     else:
-                        response += '''<p style='font-size: 20px;'><b>''' + key + '</b>' + ':<br/>' + str(summary[key]) + '</p><br/>'
+                        response += '''<img src=''' + Url + '''alt="prod" width="100" height="100"><p style='font-size: 20px;'></div><b>''' + key + '</b>' + ':<br/>' + str(summary[key]) + '</p><br/>'
                 
                 self.context.append({"role": "agent", "content": summary})
                 self.summary_keyword_mode = True

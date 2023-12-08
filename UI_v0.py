@@ -19,22 +19,6 @@ def start_message():
 with gr.Blocks() as demo:
     title = gr.HTML(value='''<img src="https://drive.google.com/uc?export=view&id=1amJbcxljmYMuXl8o4N-X7hu3BMnOrZTi" alt="Logo" width="100" height="100"><h1>ShopGPT</h1>''')
     chatbot = gr.Chatbot(value=start_message(), layout="panel", label="ShopGPT", show_label=True)
-
-    # with gr.Row(equal_height=True):
-    #     btn1 = gr.Button(value="Quality", scale=0)
-    #     btn2 = gr.Button(value="Delivery", scale=0)
-    #     btn3 = gr.Button(value="Complaints", scale=0)
-
-    # Mahek - Tried to implement onclick functionality using functions
-    # output1 = gr.Textbox(label="output 1")
-    # def sentence_maker():
-    #     return "Hello"
-    # def update_output1():
-    #     output1.value = sentence_maker()
-
-    # btn1.click(update_output1)
-
-
     msg = gr.Textbox()
     clear = gr.ClearButton([msg, chatbot])    
 
