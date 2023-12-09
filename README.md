@@ -47,11 +47,23 @@ We use the [Amazon Review Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets/am
 ## ✍️ Instructions to Run
 
 - **Clone the repository**: `git clone https://github.com/VijayrajS/ShopGPT`
-- **Create a Python virtual environment:** Follow instructions from [virtualenv Documentation](https://docs.python.org/3/library/venv.html)
+- **Create a Python virtual environment:** If you do not have Python virtualenv installed, please run the following command to install virtualenv:
+
+`pip install virtualenv or pip3 install virtualenv` or,
+
+`python3 -m pip install virtualenv`
+
+Setup the virtualenv by running the following commands:
+
+```
+python3 -m virtualenv .shopgpt_env
+source .shopgpt_env/bin/activate
+```
+
 - **Install necessary Python packages**: `pip install -r requirements.txt`
-- **Set up your own OpenAI API key**: Follow instructions from [OpenAI API docs](https://platform.openai.com/docs/quickstart?context=python)
+- **Set up your own OpenAI API key**: Follow instructions from [OpenAI API docs](https://platform.openai.com/docs/quickstart?context=python). Update your API key in line3 of `GPTGateway.py`.
 - **Download the dataset** from [UCSD Amazon Reviews Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/)
-- **Host your Database**: Host the downloaded dataset on MongoDB Atlas.
+- **Host your Database**: Host the downloaded dataset on MongoDB Atlas. Update your MongoDB Atlas URI in line10 of `DataSource.py`.
 - **Run the App Locally**: Run `python UI_v0.py`
 
 ## Demo (YouTube)
