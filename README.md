@@ -24,8 +24,8 @@ Our key components all use the OpenAI API, with GPT3.5-turbo as a base model for
 
 ## 🚀 Technology Stack:
   
- - **Frontend**: <img src="https://pypi-camo.global.ssl.fastly.net/a95ef5913dc4cc84d2155ff690a0fa0d4c33d7e2/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f67726164696f2d6170702f67726164696f2f6d61696e2f726561646d655f66696c65732f67726164696f2e737667"/> 
- - **GPT 3.5 API**: <img src="https://www.webfx.com/wp-content/uploads/2023/07/what-is-openai.png" height="40" width="120">
+ - **Frontend**: <img src="https://pypi-camo.global.ssl.fastly.net/a95ef5913dc4cc84d2155ff690a0fa0d4c33d7e2/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f67726164696f2d6170702f67726164696f2f6d61696e2f726561646d655f66696c65732f67726164696f2e737667" height="25" width="100"> 
+ - **GPT 3.5 API**: <img src="https://www.webfx.com/wp-content/uploads/2023/07/what-is-openai.png" height="40" width="80">
  - **Database**: <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" height="25" width="100">
 
  ## 🗄️ Dataset Used and Data Storage
