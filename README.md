@@ -17,10 +17,18 @@ A high-level design for the proposed system is presented below:
 
 Our key components all use the OpenAI API, with **GPT3.5-turbo** as a base model for AI-driven predictions.
 
-* **Prompt Classifier** : Classifies whether the user wants a summary, comparison or recommendation.
-* **Review Summarizer** : Summarizes multiple reviews in JSON format and returns structured product review summaries.
-* **Product Comparisons**: Performs structured comparison across pairs of products. 
-* **Personalized Product Recommendations**: Given a user input, generates product recommendations by comparison of summaries guided by the user's requirements. 
+* **Prompt Classifier** : Classifies whether the user wants a summary, comparison or recommendation. Internal backend component.
+* **Review Summarizer** : Summarizes multiple reviews in JSON format and returns structured product review summaries. An example is shown below:
+  
+  [![summarization-gif.gif](https://i.postimg.cc/DyfKb6HC/summarization-gif.gif)](https://postimg.cc/8sYY2R1W)
+  
+* **Product Comparisons**: Performs structured comparison across pairs of products. An example is shown below:
+  
+  [![comparison.gif](https://i.postimg.cc/JnQ2rVrR/comparison.gif)](https://postimg.cc/HcV2zN8N)
+  
+* **Personalized Product Recommendations**: Given a user input, generates product recommendations by comparison of summaries guided by the user's requirements. An example is shown below:
+  
+  [![reco.gif](https://i.postimg.cc/nrgYZ0DH/reco.gif)](https://postimg.cc/8fdrmd43)
 
 ## 🚀 Technology Stack:
   
