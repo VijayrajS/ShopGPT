@@ -48,7 +48,7 @@ We use the [Amazon Review Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets/am
 - **Set up your own OpenAI API key**: Follow instructions from [OpenAI API docs](https://platform.openai.com/docs/quickstart?context=python)
 - **Download the dataset** from [UCSD Amazon Reviews Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/)
 - **Host your Database**: Host the downloaded dataset on MongoDB Atlas.
-- **Run the App Locally**: 
+- **Run the App Locally**: Run `python UI_v0.py`
 
 ## Demo (YouTube)
  [![hurriCARE](https://img.youtube.com/vi/5UYiMiq8xxQ/0.jpg)](https://www.youtube.com/watch?v=5UYiMiq8xxQ)
