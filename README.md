@@ -30,6 +30,10 @@ Our key components all use the OpenAI API, with **GPT3.5-turbo** as a base model
   
   [![reco.gif](https://i.postimg.cc/nrgYZ0DH/reco.gif)](https://postimg.cc/8fdrmd43)
 
+* **Keyword Extraction**: Extract keywords from the summarized reviews and allow to filter the summary according to a keyword. An example is shown below:
+
+  [![keywords.gif](https://i.postimg.cc/xj5CXttC/keywords.gif)](https://postimg.cc/t71yft0Q)
+
 ## 🚀 Technology Stack:
   
  - **Frontend**: <img src="https://pypi-camo.global.ssl.fastly.net/a95ef5913dc4cc84d2155ff690a0fa0d4c33d7e2/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f67726164696f2d6170702f67726164696f2f6d61696e2f726561646d655f66696c65732f67726164696f2e737667" height="25" width="100"> 
