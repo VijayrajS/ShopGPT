@@ -15,7 +15,7 @@ A high-level design for the proposed system is presented below:
 
 ### Key Components:
 
-Our key components all use the OpenAI API, with GPT3.5-turbo as a base model for AI-driven predictions.
+Our key components all use the OpenAI API, with **GPT3.5-turbo** as a base model for AI-driven predictions.
 
 * **Prompt Classifier** : Classifies whether the user wants a summary, comparison or recommendation.
 * **Review Summarizer** : Summarizes multiple reviews in JSON format and returns structured product review summaries.
@@ -25,13 +25,22 @@ Our key components all use the OpenAI API, with GPT3.5-turbo as a base model for
 ## 🚀 Technology Stack:
   
  - **Frontend**: <img src="https://pypi-camo.global.ssl.fastly.net/a95ef5913dc4cc84d2155ff690a0fa0d4c33d7e2/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f67726164696f2d6170702f67726164696f2f6d61696e2f726561646d655f66696c65732f67726164696f2e737667" height="25" width="100"> 
- - **GPT 3.5 API**: <img src="https://www.webfx.com/wp-content/uploads/2023/07/what-is-openai.png" height="40" width="80">
- - **Database**: <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" height="25" width="100">
+ - **GPT 3.5 API**: <img src="https://www.webfx.com/wp-content/uploads/2023/07/what-is-openai.png" height="50" width="80">
+ - **Database**: <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" height="30" width="100">
 
  ## 🗄️ Dataset Used and Data Storage
 
+We use the [Amazon Review Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/) Provided by UCSD (2018) with 233.1 million reviews. The dataset contains reviews in the range May 1996 - Oct 2018. We host a subset of this dataset in JSON format, along with associated metadata on MongoDB Atlas. 
 
 ## ✍️ Instructions to Run
+
+- **Clone the repository**: `git clone https://github.com/VijayrajS/ShopGPT`
+- **Create a Python virtual environment:** Follow instructions from [virtualenv Documentation](https://docs.python.org/3/library/venv.html)
+- **Install necessary Python packages**: `pip install -r requirements.txt`
+- **Set up your own OpenAI API key**: Follow instructions from [OpenAI API docs](https://platform.openai.com/docs/quickstart?context=python)
+- **Download the dataset** from [UCSD Amazon Reviews Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/)
+- **Host your Database**: Host the downloaded dataset on MongoDB Atlas.
+- **Run the App Locally**: 
 
 ## Demo (YouTube)
  [![hurriCARE](https://img.youtube.com/vi/5UYiMiq8xxQ/0.jpg)](https://www.youtube.com/watch?v=5UYiMiq8xxQ)
